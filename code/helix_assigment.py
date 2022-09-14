@@ -12,8 +12,9 @@ def select_turn_res(hbond_dic):
 
     Returns
     -------
-    _type_
-        _description_
+    dic[str :{list[int]}]
+        Dictionary containing for each chain, the positions of the 
+        residues making an H-bond with a residue i+3, 4 or 5.
     """
     n = [3, 4, 5]
     turn_dic = {}
@@ -28,17 +29,20 @@ def select_turn_res(hbond_dic):
 # alpha-helix
 
 def assign_helix(turn_dic):
-    """_summary_
+    """Assignment of helices by the "H", of n-turns by the letter "T".
 
     Parameters
     ----------
-    turn_dic : _type_
-        _description_
+    turn_dic : dic{str :list[int]}
+        Dictionary containing for each chain, the positions of the 
+        residues making an H-bond with a residue i+3, 4 or 5.
 
     Returns
     -------
-    _type_
-        _description_
+    dic{str : list[str]}
+        List containing for each string and at each position the letter 
+        "T", "H" or a "-" to assign a helix, an n-turn or no structure 
+        of this type. 
     """
     assign_helix_dic = {}
 
