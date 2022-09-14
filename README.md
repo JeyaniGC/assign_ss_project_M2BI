@@ -41,7 +41,7 @@ grep "^ATOM" filename.pdb > new_file.pdb
 
 ## Download HBPLUS
 
-Install [HBPLUS]{https://www.ebi.ac.uk/thornton-srv/software/HBPLUS/).
+Install [HBPLUS](https://www.ebi.ac.uk/thornton-srv/software/HBPLUS/).
 
 Execute HBPLUS : 
 
@@ -53,7 +53,5 @@ This will generate an .hb2 file that you will use for your analyze.
 
 ## Install DSSP
 
-Run 3D model construction:
-
-Install [DSSP]{https://ssbio.readthedocs.io/en/latest/instructions/dssp.html}
+Install [DSSP](https://ssbio.readthedocs.io/en/latest/instructions/dssp.html).
 
