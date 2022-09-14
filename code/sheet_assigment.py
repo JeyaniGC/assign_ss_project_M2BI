@@ -1,5 +1,5 @@
-    """Script that assigns secondary bridge structures.
-    """
+"""Script that assigns secondary bridge structures."""
+
 def find_sequential_res(hbond_dic):
     """Selection of positions of consecutive residues within each protein chain.
 

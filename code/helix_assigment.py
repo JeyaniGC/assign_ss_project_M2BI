@@ -1,5 +1,4 @@
-    """Script qssigning n-turns and helix.
-    """
+"""Script qssigning n-turns and helix."""
 
 def select_turn_res(hbond_dic):
     """Selection of residues i making an H-bond with a residue i + 3; 4 or 5.

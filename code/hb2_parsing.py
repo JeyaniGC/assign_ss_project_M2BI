@@ -1,5 +1,6 @@
-    """Script that parses an .hb2 file and retrieves in dictionary form the pairs of residues and their positions involved in H-bonds.
-    """
+"""Script that parses an .hb2 file and retrieves in dictionary form the pairs of residues and their positions involved in H-bonds."""
+import re 
+
 def select_res_interacting(filename):
     """Parse an .hb2 file to retrieve lines containing H-bonds.
 
