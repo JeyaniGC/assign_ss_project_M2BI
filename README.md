@@ -1,4 +1,4 @@
-# Secondqry structure assigment project
+# Secondary structure assigment project
 
 ## Download this repository
 
