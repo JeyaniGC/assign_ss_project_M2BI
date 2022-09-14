@@ -1,5 +1,20 @@
-""" """
+    """Script that assigns secondary bridge structures.
+    """
 def find_sequential_res(hbond_dic):
+    """Selection of positions of consecutive residues within each protein chain.
+
+    Parameters
+    ----------
+    hbond_dic : dic{str: list[list[str, int, str, int]]}
+        Dictionary arranged by chain containing an amino acid and its position 
+        making an H-bond with an amino acid and its position.
+
+    Returns
+    -------
+    dico{str: list[list[int, int, int]]}
+        Dictionary containing for each chain, a list containing sub-lists of 
+        the position of 3 consecutive residues involved in H-bonds.
+    """
     sequential_res = {}
 
     for key in hbond_dic:
@@ -17,6 +32,23 @@ def find_sequential_res(hbond_dic):
 
 # antiparallel bridge 
 def assign_antiparallel_bridge(sequeetial_res, hbond_dic):
+    """_summary_
+
+    Parameters
+    ----------
+    sequeetial_res : dico{str: list[list[int, int, int]]}
+        Dictionary containing for each chain, a list containing sub-lists of 
+        the position of 3 consecutive residues involved in H-bonds.
+    hbond_dic : dic{str: list[list[str, int, str, int]]}
+        Dictionary arranged by chain containing an amino acid and its position 
+        making an H-bond with an amino acid and its position.
+
+    Returns
+    -------
+    list[list[int, int, int]]
+        Creation of a list of sub-lists containing groups of 3 residues 
+        involved in an antiparallel bridge.
+    """
     res_bond = []
     for key, value in sequential_res.items():
         for i in range(len(value)-1): 
