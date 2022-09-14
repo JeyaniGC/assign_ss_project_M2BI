@@ -1,4 +1,5 @@
 # Secondary structure assigment project
+#### Auteur : Jeyani George Clement 
 
 ## Download this repository
 
