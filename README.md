@@ -57,7 +57,3 @@ Run 3D model construction:
 
 Install [DSSP]{https://ssbio.readthedocs.io/en/latest/instructions/dssp.html}
 
-
-```bash
-dssp -i filename.pdb -o filename.dssp
-```
